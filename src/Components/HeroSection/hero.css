@@ -1,0 +1,167 @@
+.animate{
+            animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+            animation-duration: 2.5s; /* Change to speed up or slow down */
+            animation-iteration-count: infinite; /* Never stop waving :) */
+            transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+            display: inline-block;
+}
+            @keyframes wave-animation {
+              0% {
+                transform: rotate(0deg);
+              }
+              10% {
+                transform: rotate(14deg);
+              } /* The following five values can be played with to make the waving more or less extreme */
+              20% {
+                transform: rotate(-8deg);
+              }
+              30% {
+                transform: rotate(14deg);
+              }
+              40% {
+                transform: rotate(-4deg);
+              }
+              50% {
+                transform: rotate(10deg);
+              }
+              60% {
+                transform: rotate(0deg);
+              } /* Reset for the last half to pause */
+              100% {
+                transform: rotate(0deg);
+              }
+            }
+
+            .filt{
+                filter: (drop-shadow(1px 4px 0 #6bffab));
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .borderlights {
+                
+                width: 0.2rem;
+                height: 6rem;
+                background-color: rgb(237, 18, 108);
+                position: absolute;
+                bottom: 30px;
+                left: 320px;
+                border-radius: 1.5rem;
+                transition: all ease 0.7s;
+              }
+
+              .skills{
+                    border: 2px solid black;
+                    border-radius: 50%;
+                    height: 14rem;
+                    transition: all ease 0.7s;
+                    background: url("https://t3.ftcdn.net/jpg/02/03/15/34/360_F_203153438_6tvdEUB2Nw9K0pubP6GAk7TjSIKlLorI.jpg")
+                      no-repeat center center/cover;
+                    object-fit: contain;
+                    animation: morph 15s ease-in-out infinite;
+                    transition: all 0.4s ease-in-out;
+                    z-index: 5;
+                    overflow: hidden;
+              }
+
+              .profile{
+                border: 2px solid black;
+                border-radius: 50%;
+                height: 25rem;
+                transition: all ease 0.7s;
+                background: url("https://t3.ftcdn.net/jpg/02/03/15/34/360_F_203153438_6tvdEUB2Nw9K0pubP6GAk7TjSIKlLorI.jpg")
+                  no-repeat center center/cover;
+                object-fit: contain;
+                animation: morph 15s ease-in-out infinite;
+                transition: all 0.4s ease-in-out;
+                z-index: 5;
+                overflow: hidden;
+          }
+
+              .container {
+                height: 4rem;
+                width: 4rem;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100rem;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+              }
+                .container:hover {
+                  cursor: pointer;
+                  animation: myAnim 2s ease 0s 1 normal forwards;
+      
+                  @keyframes myAnim {
+                    0%,
+                    50%,
+                    100% {
+                      opacity: 1;
+                    }
+      
+                    25%,
+                    75% {
+                      opacity: 0.7;
+                    }
+                  }
+                }
+      
+
+              .tech{
+              filter: contrast(140%) saturate(90%);
+              animation: morph 15s ease-in-out infinite;
+              transition: all 0.4s ease-in-out;
+              z-index: 5;
+              overflow: hidden;
+              }
+
+              .tech:hover {
+                background: url("https://cdn.dribbble.com/userupload/11225362/file/original-c556f5d873c996992430621715733e26.png?resize=752x")
+                  no-repeat center center/contain;
+              }
+
+              @keyframes morph {
+                0% {
+                  border-radius: 42% 58% 59% 41% / 42% 41% 59% 58%;
+                }
+    
+                10% {
+                  border-radius: 33% 67% 59% 41% / 51% 34% 66% 49%;
+                }
+    
+                20% {
+                  border-radius: 33% 67% 46% 54% / 65% 45% 55% 35%;
+                }
+    
+                30% {
+                  border-radius: 47% 53% 32% 68% / 59% 34% 66% 41%;
+                }
+    
+                40% {
+                  border-radius: 60% 40% 40% 60% / 44% 50% 50% 56%;
+                }
+    
+                50% {
+                  border-radius: 73% 27% 73% 27% / 29% 63% 37% 71%;
+                }
+    
+                60% {
+                  border-radius: 50% 50% 57% 43% / 41% 40% 60% 59%;
+                }
+    
+                70% {
+                  border-radius: 27% 73% 32% 68% / 58% 24% 76% 42%;
+                }
+    
+                80% {
+                  border-radius: 40% 60% 28% 72% / 49% 45% 55% 51%;
+                }
+    
+                90% {
+                  border-radius: 59% 41% 47% 53% / 61% 58% 42% 39%;
+                }
+    
+                100% {
+                  border-radius: 44% 56% 56% 44% / 39% 50% 50% 61%;
+                }
+              }
