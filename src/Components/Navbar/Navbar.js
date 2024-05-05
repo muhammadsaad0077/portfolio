@@ -31,7 +31,7 @@ const Navbar = () => {
         <h1>Saad</h1>
       </div>
       <div className="m-6 border border-gray-100 rounded-2xl p-[6px] px-4 hover:bg-gray-600 cursor-pointer">
-        <a href='#' className="font-bold">Available for projects</a>
+        <a href='#a' className="font-bold">Available for projects</a>
       </div>
       <div className="m-6 flex border border-gray-100 rounded-2xl py-1 px-4">
         <h1 className="cursor-pointer" onClick={resumeDownload}>Resume</h1>  
@@ -49,21 +49,21 @@ const Navbar = () => {
         </div>
           {
             click && (
-              <div className=" absolute border border-black left-[85%] p-8 top-32">
+              <div className="absolute border text-white border-gray-50 left-[85%] p-8 top-32">
                 <div className="">
                   <ul className="flex flex-col justify-center text-center">
                 <a href="github_profile" target='_blank'>
-                <div className="flex items-center justify-center border border-black rounded-[2rem] py-1 mb-2">
+                <div className="flex items-center justify-center border border-gray-50 rounded-[2rem] py-1 mb-2">
                   <img className="w-[2.5rem] h-[2.5rem]" src={gitfork} alt='Fork'></img>
                 <h1 className="text-xl font-bold">Fork</h1>
                 </div>
                 </a>
                 
-                  <li className="m-1 p-1 border border-black px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">Home</li>
-                  <li className="m-1 p-1 border border-black px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">About</li>
-                  <li className="m-1 p-1 border border-black px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">Projects</li>
-                  <li className="m-1 p-1 border border-black px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">Certificates</li>
-                  <li className="m-1 p-1 border border-black px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">Contact</li>
+                  <li className="m-1 p-1 border border-gray-50 px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">Home</li>
+                  <li className="m-1 p-1 border border-gray-50 px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">About</li>
+                  <li className="m-1 p-1 border border-gray-50 px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">Projects</li>
+                  <li className="m-1 p-1 border border-gray-50 px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">Certificates</li>
+                  <li className="m-1 p-1 border border-gray-50 px-8 hover:bg-[#2e8b57] ease 0.7s hover:text-white transition-all">Contact</li>
                 </ul>
                 </div>
               </div>

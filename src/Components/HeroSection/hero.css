@@ -54,27 +54,20 @@
                     border-radius: 50%;
                     height: 14rem;
                     transition: all ease 0.7s;
-                    background: url("https://t3.ftcdn.net/jpg/02/03/15/34/360_F_203153438_6tvdEUB2Nw9K0pubP6GAk7TjSIKlLorI.jpg")
-                      no-repeat center center/cover;
                     object-fit: contain;
-                    animation: morph 15s ease-in-out infinite;
-                    transition: all 0.4s ease-in-out;
+                    
                     z-index: 5;
                     overflow: hidden;
               }
+
+              
 
               .profile{
                 border: 2px solid black;
                 border-radius: 50%;
                 height: 25rem;
-                transition: all ease 0.7s;
-                background: url("https://t3.ftcdn.net/jpg/02/03/15/34/360_F_203153438_6tvdEUB2Nw9K0pubP6GAk7TjSIKlLorI.jpg")
-                  no-repeat center center/cover;
                 object-fit: contain;
-                animation: morph 15s ease-in-out infinite;
-                transition: all 0.4s ease-in-out;
-                z-index: 5;
-                overflow: hidden;
+                
           }
 
               .container {
@@ -122,19 +115,19 @@
 
               @keyframes morph {
                 0% {
-                  border-radius: 42% 58% 59% 41% / 42% 41% 59% 58%;
+                  border-radius: 50% 58% 59% 41% / 50% 41% 59% 58%;
                 }
     
                 10% {
-                  border-radius: 33% 67% 59% 41% / 51% 34% 66% 49%;
+                  border-radius: 46% 67% 59% 41% / 51% 34% 66% 49%;
                 }
     
                 20% {
-                  border-radius: 33% 67% 46% 54% / 65% 45% 55% 35%;
+                  border-radius: 46% 67% 46% 54% / 65% 45% 55% 35%;
                 }
     
                 30% {
-                  border-radius: 47% 53% 32% 68% / 59% 34% 66% 41%;
+                  border-radius: 53% 53% 32% 68% / 59% 34% 66% 41%;
                 }
     
                 40% {

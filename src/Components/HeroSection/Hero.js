@@ -9,7 +9,7 @@ import saadpic from '../../Images/saad.jpg'
 
 const Hero = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white h-[87vh]">
         <div className="mt-20 ml-44">
             <h1 className="text-[52px] font-mono filt">Front-End React</h1>
             <div className="flex">
@@ -45,8 +45,8 @@ const Hero = () => {
                 )})
             } */}
         </div>
-        <div className='flex justify-end relative bottom-[105vh] right-[22vw] profile'>
-            <img className='' src={saadpic} alt=''></img>
+        <div className='flex justify-end relative bottom-[105vh] right-[22vw]'>
+            <img className="profile" src={saadpic} alt=''></img>
         </div>
 
         
@@ -56,3 +56,6 @@ const Hero = () => {
 }
 
 export default Hero
+
+// animation: morph 15s ease-in-out infinite;   .skills
+             // transition: all 0.4s ease-in-out;
